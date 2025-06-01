@@ -28,6 +28,9 @@ echo "==========================================================================
 echo "options nvidia-drm modeset=1"
 sudo tee /etc/modprobe.d/nvidia-drm-nomodeset.conf
 sudo mkinitcpio -P
+echo "====================================================================================="
+echo "blacklist nouveau" 
+sudo tee /etc/modprobe.d/blacklist-nouveau.conf
 clear
 #to check nvidia status
 echo "check nvidia status"
