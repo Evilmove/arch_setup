@@ -18,9 +18,9 @@ echo "enable bluetooth"
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 echo "====================================================================================="
-echo "installing firefox and neofetch"
+echo "installing firefox and fastfetch"
 sudo pacman -S firefox -y
-sudo pacman -S neofetch -y
+sudo pacman -S fastfetch -y
 echo "====================================================================================="
 echo "installing nvidia propriority drivers"
 sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings
