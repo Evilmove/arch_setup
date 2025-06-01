@@ -27,6 +27,7 @@ sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings
 echo "====================================================================================="
 echo "options nvidia-drm modeset=1"
 sudo tee /etc/modprobe.d/nvidia-drm-nomodeset.conf
+sudo mkinitcpio -P
 clear
 #to check nvidia status
 echo "check nvidia status"
