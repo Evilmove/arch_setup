@@ -21,6 +21,9 @@ echo "==========================================================================
 echo "installing firefox and neofetch"
 sudo pacman -S firefox -y
 sudo pacman -S neofetch -y
+echo "====================================================================================="
+echo "installing nvidia propriority drivers"
+sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings
 clear
 #to check nvidia status
 echo "check nvidia status"
