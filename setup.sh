@@ -1,20 +1,23 @@
 echo "update system"
 sudo pacman -Sy -y
-clear
+echo "====================================================================================="
 echo "upgrading"
 sudo pacman -Syu -y
-clear
+echo "====================================================================================="
+echo "installing linux headers "
+sudo pacman -S base-devel linux-zen-headers dkms
+echo "====================================================================================="
 echo "installing firmware"
 sudo pacman -Sy sof-firmware -y
 sudo pacman -Sy linux-firmware-qlogic -y
-clear
+echo "====================================================================================="
 echo "installing git"
 sudo pacman -Sy git -y
-clear
+echo "====================================================================================="
 echo "enable bluetooth"
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
-clear
+echo "====================================================================================="
 echo "installing firefox and neofetch"
 sudo pacman -S firefox -y
 sudo pacman -S neofetch -y
