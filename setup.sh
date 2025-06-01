@@ -24,6 +24,9 @@ sudo pacman -S neofetch -y
 echo "====================================================================================="
 echo "installing nvidia propriority drivers"
 sudo pacman -S nvidia-dkms nvidia-utils nvidia-settings
+echo "====================================================================================="
+echo "options nvidia-drm modeset=1"
+sudo tee /etc/modprobe.d/nvidia-drm-nomodeset.conf
 clear
 #to check nvidia status
 echo "check nvidia status"
