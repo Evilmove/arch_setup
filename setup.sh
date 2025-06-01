@@ -35,3 +35,9 @@ clear
 #to check nvidia status
 echo "check nvidia status"
 nvidia-smi -y
+echo "done"
+echo "================================================
+
+reboot after installetion completion
+
+=================================================="
