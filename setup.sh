@@ -13,7 +13,7 @@ echo "installing git"
 sudo pacman -S git --noconfirm
 echo "====================================================================================="
 echo "enable bluetooth"
-sudo systemctl enable --now bluetooth.service # --now evita tener que volver ejecutar systemctl para hacer start, --now hace el start
+sudo systemctl enable --now bluetooth.service # --now avoids having to re-run systemctl to start, --now does the start
 echo "====================================================================================="
 echo "installing firefox and fastfetch"
 sudo pacman -S firefox fastfetch --noconfirm
